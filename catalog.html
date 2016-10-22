@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="header__nav">
+      <ul>
+        <li><a href="#">ИНФОРМАЦИЯ</a></li>
+        <li><a href="#">ФОТО И ВИДЕО</a></li>
+        <li><a href="#">КАРТА ШТАТА</a></li>
+        <li><a href="#">ГОСТИНИЦЫ</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="filter">
+      <form class="filter__form">
+        <div class="filter__item">
+          <h2 class="filter__heading">ИНФРАСТРУКТУРА:</h2>
+          <ul class="filter__checkbox">
+            <li><input type="checkbox" id="pool"><label for="pool">БАССЕЙН</label></li>
+            <li><input type="checkbox" id="park"><label for="park">ПАРКОВКА</label></li>
+            <li><input type="checkbox" id="wifi"><label for="wifi">WI-FI</label></li>
+          </ul>
+        </div>
+        <div class="filter__item">
+          <h2 class="filter__heading">ТИП ЖИЛЬЯ:</h2>
+          <ul class="filter__checkbox">
+            <li><input type="checkbox" id="hotel"><label for="hotel">ГОСТИНИЦА</label></li>
+            <li><input type="checkbox" id="motel"><label for="motel">МОТЕЛЬ</label></li>
+            <li><input type="checkbox" id="apps"><label for="apps">АПАРТАМЕНТЫ</label></li>
+          </ul>
+        </div>
+        <div class="filter__range">
+          <h2 class="filter__heading">СТОИМОСТЬ В СУТКИ (Р):</h2>
+          <table class="filter__table">
+            <tr>
+              <th>ОТ 0</th>
+              <th>ДО 3000</th>
+            </tr>
+          </table>
+          <input type="range" min="1" max="5" id="">
+          <button class="filter__btn" type="button">ПОКАЗАТЬ</button>
+        </div>
+      </form>
+    </section>
+    <section class="sorting">
+      <span class "sorting__count">НАЙДЕНО: 3</span>
+      <div class="sorting__types">
+        <span class="sorting__heading">СОРТИРОВКА:</span>
+        <a href="#" <span class="sorting__item">ПО ЦЕНЕ</span></a>
+        <a href="#" <span class="sorting__item">ПО ТИПУ</span></a>
+        <a href="#" <span class="sorting__item">ПО РЕЙТИНГУ</span></a>
+      </div>
+    </section>
+    <section class="hotels">
+      <article class="hotels__item">
+        <img src="img/catalog-amara.png" width="1" height="1" alt="AMARA">
+        <h1 class="hotels__heading">AMARA RESORT & SPA</h1>
+        <table class="hotels__cost">
+          <tr>
+            <td>ГОСТИНИЦА</td>
+            <td>ОТ 3500 Р.</td>
+          </tr>
+        </table>
+        <a href="#" class="hotels__link hotels__link--blue">ПОДРОБНЕЕ</a>
+        <a href="#" class="hotels__link hotels__link--brown">ЗАБРОНИРОВАТЬ</a>
+        <span class="hotels__rank">РЕЙТИНГ: 8,5</span>
+      </article>
+      <article class="hotels__item">
+        <img src="img/catalog-qual.png" width="1" height="1" alt="QUAIL">
+        <h1 class="hotels__heading">DESERT QUAIL INN</h1>
+        <table class="hotels__cost">
+          <tr>
+            <td>МОТЕЛЬ</td>
+            <td>ОТ 2000 Р.</td>
+          </tr>
+        </table>
+        <a href="#" class="hotels__link hotels__link--blue">ПОДРОБНЕЕ</a>
+        <a href="#" class="hotels__link hotels__link--brown">ЗАБРОНИРОВАТЬ</a>
+        <span class="hotels__rank">РЕЙТИНГ: 8,9</span>
+      </article>
+      <article class="hotels__item">
+        <img src="img/catalog-poco.png" width="1" height="1" alt="POCO">
+        <h1 class="hotels__heading">VALLAS AT POCO DIABLO</h1>
+        <table class="hotels__cost">
+          <tr>
+            <td>АПАРТАМЕНТЫ</td>
+            <td>ОТ 4000 Р.</td>
+          </tr>
+        </table>
+        <a href="#" class="hotels__link hotels__link--blue">ПОДРОБНЕЕ</a>
+        <a href="#" class="hotels__link hotels__link--brown">ЗАБРОНИРОВАТЬ</a>
+        <span class="hotels__rank">РЕЙТИНГ: 9,2</span>
+      </article>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__hashtag">
+      <span>#VISITSEDONA</span>
+    </div>
+    <div class="footer__social">
+      <a class="footer__btn footer__btn__tw" href="#">Twitter</a>
+      <a class="footer__btn footer__btn__fb" href="#">facebook</a>
+      <a class="footer__btn footer__btn__yt" href="#">Youtube</a>
+    </div>
+    <div class="footer__copyright">
+      <p>Website by:</p>
+      <a href="https://htmlacademy.ru/"><img src="img/index-HTMLacademy.png" width="113" height="39" alt="HTML Academy"></a>
+    </div>
+  </footer>
+</body>
+
+</html>

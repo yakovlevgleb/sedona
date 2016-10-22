@@ -7,8 +7,8 @@
 </head>
 
 <body>
-  <header class="main-haeder">
-    <nav class=main-navigation>
+  <header class="header">
+    <nav class="header__nav">
       <ul>
         <li><a href="#">ИНФОРМАЦИЯ</a></li>
         <li><a href="#">ФОТО И ВИДЕО</a></li>
@@ -18,97 +18,98 @@
     </nav>
   </header>
   <main>
-    <section class="main-intro">
+    <section class="intro">
       <img></img>
       <img></img>
       <img></img>
     </section>
-    <section class="main-description">
-      <b class="slogan">СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</b>
-      <p class="causes">РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ДРАНД КАНЬОН!</p>
+    <section class="description">
+      <b class="description__slogan">СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</b>
+      <p class="description__causes">РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ДРАНД КАНЬОН!</p>
     </section>
-    <section class="features features-blue">
-      <div class="features-desc">
-        <b class="features-name">НАСТОЯЩИЙ ГОРОДОК</b>
-        <span class="features-number">&mdash;№1&mdash;</span>
+    <section class="features features--blue">
+      <div class="features__desc">
+        <b class="features__name">НАСТОЯЩИЙ ГОРОДОК</b>
+        <span class="features__number">&mdash;№1&mdash;</span>
         <p>СЕДОНА &mdash; НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
       </div>
-      <div class="features-img">
+      <div class="features__image">
         <img src="img/index-town.png" width="800" height="256" alt="Town">
       </div>
     </section>
     <section class="cause">
-      <div class="cause-item">
+      <div class="cause__item">
         <img src="img/index-home.png" width="75" height="72" alt="home">
-        <b class="cause-name">ЖИЛЬЁ</b>
+        <b class="cause__name">ЖИЛЬЁ</b>
         <p>РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ, ВСЁ КАК В КИНО!</p>
       </div>
-      <div class="cause-item">
+      <div class="cause__item">
         <img src="img/index-burger.png" width="75" height="72" alt="burger">
-        <b class="cause-name">ЕДА</b>
+        <b class="cause__name">ЕДА</b>
         <p>ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР. ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</p>
       </div>
-      <div class="cause-item">
+      <div class="cause__item">
         <img src="img/index-box.png" width="75" height="72" alt="box">
-        <b class="cause-name">СУВЕНИРЫ</b>
+        <b class="cause__name">СУВЕНИРЫ</b>
         <p>НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО ПРОИЗВОДСТВА!</p>
       </div>
     </section>
-    <section class="features features-blue">
-      <div class="features-img">
+    <section class="features features--blue">
+      <div class="features__image">
         <img src="img/index-rock.png" width="800" height="256" alt="rock">
       </div>
-      <div class="features-desc">
-        <b class="features-name">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</b>
-        <span class="features-number">&mdash;№2&mdash;</span>
+      <div class="features__desc">
+        <b class="features__name">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</b>
+        <span class="features__number">&mdash;№2&mdash;</span>
         <p>ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ КОНЕЧНО ВЫ ОСМЕЛИТЕСЬ</p>
       </div>
     </section>
-    <section class="features features-grey">
-      <div class="features-desc">
-        <b class="features-name">НЕБОЛЬШАЯ ПЛОЩАДЬ</b>
-        <span class="features-number">&mdash;№3&mdash;</span>
+    <section class="features features--grey">
+      <div class="features__desc">
+        <b class="features__name">НЕБОЛЬШАЯ ПЛОЩАДЬ</b>
+        <span class="features__number">&mdash;№3&mdash;</span>
         <p>ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
       </div>
-      <div class="features-desc">
-        <b class="features-name">КРАСИВАЯ ДОРОГА</b>
-        <span class="features-number">&mdash;№4&mdash;</span>
+      <div class="features__desc">
+        <b class="features__name">КРАСИВАЯ ДОРОГА</b>
+        <span class="features__number">&mdash;№4&mdash;</span>
         <p>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО!</p>
       </div>
-      <div class="features-desc">
-        <b class="features-name">МАЛО ТУРИСТОВ</b>
-        <span class="features-number">&mdash;№5&mdash;</span>
+      <div class="features__desc">
+        <b class="features__name">МАЛО ТУРИСТОВ</b>
+        <span class="features__number">&mdash;№5&mdash;</span>
         <p>БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН И ТОЛПИТСЯ ТАМ</p>
       </div>
     </section>
-    <section class="search-title">
+    <section class="searchtitle">
       <b>ЗАИНТЕРЕСОВАЛИСЬ?<b>
       <p>УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ, И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
       <a href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
     </section>
     <section class="search">
-      <div class="search-content">
-          <form class="search-form" action="#" method="post">
+      <div class="search__content">
+          <form class="search__form" action="#" method="post">
             <label>ДАТА ЗАЕЗДА:</label><input type="text" name="datein" value="">
             <label>ДАТА ВЫЕЗДА:</label><input type="text" name="dateout" value="">
             <label>ВЗРОСЛЫЕ:</label><input type="text" name="vzr" value="">
             <label>ДЕТИ:</label><input type="text" name="chil" value="">
-            <button class="btn" type="submit">НАЙТИ</button>
+            <button class="search__btn" type="submit">НАЙТИ</button>
           </form>
         </div>
     </section>
   </main>
-  <footer class="main-footer">
-    <div class="footer-hashtag">
+  <footer class="footer  footer--transparent">
+    <div class="footer__hashtag">
       <span>#VISITSEDONA</span>
     </div>
-    <div class="footer-social">
-      <a class="social-btn social-btn-vk" href="#">Twitter</a>
-      <a class="social-btn social-btn-fb" href="#">facebook</a>
-      <a class="social-btn social-btn-inst" href="#">Youtube</a>
+    <div class="footer__social">
+      <a class="footer__btn footer__btn__tw" href="#">Twitter</a>
+      <a class="footer__btn footer__btn__fb" href="#">facebook</a>
+      <a class="footer__btn footer__btn__yt" href="#">Youtube</a>
     </div>
-    <div class="footer-copyright">
-      <p>Website by:</p><a href="https://htmlacademy.ru/"><img src="img/index-HTMLacademy.png" width="113" height="39" alt="HTML Academy"></a>
+    <div class="footer__copyright">
+      <p>Website by:</p>
+      <a href="https://htmlacademy.ru/"><img src="img/index-HTMLacademy.png" width="113" height="39" alt="HTML Academy"></a>
     </div>
   </footer>
 </body>
