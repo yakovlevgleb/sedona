@@ -15,7 +15,9 @@
         <li><a href="#">Карта штата</a></li>
         <li><a href="catalog.html">Гостиницы</a></li>
       </ul>
-      <img class="header__logo" src="img/main-logo.png">
+      <div class="header__logo">
+        <a href="#"><img class="logo__img" src="img/main-logo.png"></a>
+      </div>
     </nav>
   </header>
   <main class="main">
@@ -56,51 +58,80 @@
         <span class="sorting__heading">Сортировка:</span>
         <ul class="sorting__list">
           <li><a href="#" <span class="sorting__item">По цене</span></a></li>
-          <li><a href="#" <span class="sorting__item">По типуУ</span></a></li>
+          <li><a href="#" <span class="sorting__item">По типу</span></a></li>
           <li><a href="#" <span class="sorting__item">По рейтингу</span></a></li>
         </ul>
         <div class="arrows">
           <ul class="arrows__list">
-            <li сlass="arrows__top">вверх</li>
-            <li сlass="arrows__bottom">вниз</li>
+            <li сlass="arrows__top"><a href="#">вверх</a></li>
+            <li сlass="arrows__bottom"><a href="#">вниз</a></li>
           </ul>
         </div>
       </div>
     </section>
     <section class="hotels">
       <article class="hotels__item">
-        <img src="img/catalog-amara.png" width="1" height="1" alt="AMARA">
-        <h1 class="hotels__heading">AMARA RESORT &amp; SPA</h1>
-        <div class="hotels__type"><span class="type__name">Гостиница</span></div>
-        <div class="hotels__prise"><span class="prise__count">От 3500 Р.</span></div>
-        </table>
-        <a href="#" class="hotels__link hotels__link--blue">Подробнее</a>
-        <a href="#" class="hotels__link hotels__link--brown">Забронировать</a>
-        <div><span class="hotels__rank">Рейтинг: 8,5</span></div>
+        <div class="hotels__img">
+          <img src="img/catalog-amara.png" width="1" height="1" alt="AMARA">
+        </div>
+        <div class="hotels__info">
+          <h1 class="hotels__heading">AMARA RESORT &amp; SPA</h1>
+          <div class="hotels__type">
+            <span class="type__name">Гостиница</span>
+            <a href="#" class="hotels__link hotels__link--blue">Подробнее</a>
+          </div>
+          <div class="hotels__prise">
+            <span class="prise__count">От 3500 Р.</span>
+            <a href="#" class="hotels__link hotels__link--brown">Забронировать</a>
+          </div>
+        </div>
+        <div class="hotels__rating">
+          <span class="hotels__rank">Рейтинг: 8,5</span>
+        </div>
       </article>
       <article class="hotels__item">
-        <img src="img/catalog-qual.png" width="1" height="1" alt="QUAIL">
-        <h1 class="hotels__heading">DESERT QUAIL INN</h1>
-        <div class="hotels__type"><span class="type__name">Мотель</span></div>
-        <div class="hotels__prise"><span class="prise__count">От 2000 Р.</span></div>
-        <a href="#" class="hotels__link hotels__link--blue">Подробнее</a>
-        <a href="#" class="hotels__link hotels__link--brown">Забронировать</a>
-        <div><span class="hotels__rank">Рейтинг: 8,9</span></div>
+        <div class="hotels__img">
+          <img src="img/catalog-qual.png" width="1" height="1" alt="QUAIL">
+        </div>
+        <div class="hotels__info">
+          <h1 class="hotels__heading">DESERT QUAIL INN</h1>
+          <div class="hotels__type">
+            <span class="type__name">Мотель</span>
+            <a href="#" class="hotels__link hotels__link--blue">Подробнее</a>
+          </div>
+          <div class="hotels__prise">
+            <span class="prise__count">От 2000 Р.</span>
+            <a href="#" class="hotels__link hotels__link--brown">Забронировать</a>
+          </div>
+          <div div class="hotels__rating">
+            <span class="hotels__rank">Рейтинг: 8,9</span>
+          </div>
+        </div>
       </article>
       <article class="hotels__item">
-        <img src="img/catalog-poco.png" width="1" height="1" alt="POCO">
-        <h1 class="hotels__heading">VALLAS AT POCO DIABLO</h1>
-        <div class="hotels__type"><span class="type__name">Апартаменты</span></div>
-        <div class="hotels__prise"><span class="prise__count">От 4000 Р.</span></div>
-        <a href="#" class="hotels__link hotels__link--blue">Подробнее</a>
-        <a href="#" class="hotels__link hotels__link--brown">Забронировать</a>
-        <div><span class="hotels__rank">Рейтинг: 9,2</span></div>
+        <div class="hotels__img">
+          <img src="img/catalog-poco.png" width="1" height="1" alt="POCO">
+        </div>
+        <div class="hotels__info">
+          <h1 class="hotels__heading">VALLAS AT POCO DIABLO</h1>
+          <div class="hotels__type">
+            <span class="type__name">Апартаменты</span>
+            <a href="#" class="hotels__link hotels__link--blue">Подробнее</a>
+          </div>
+          <div class="hotels__prise">
+            <span class="prise__count">От 4000 Р.</span>
+            <a href="#" class="hotels__link hotels__link--brown">Забронировать</a>
+          </div>
+          <div class="hotels__rating">
+            <span class="hotels__rank">Рейтинг: 9,2</span>
+          </div>
+        </div>
       </article>
     </section>
   </main>
   <footer class="footer">
     <div class="footer__hashtag">
-      <a>#VISITSEDONA</a>
+      <a href="#">#VISITSEDONA</a>
     </div>
     <div class="footer__social">
       <a class="footer__btn footer__btn--tw" href="#">Twitter</a>
