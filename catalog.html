@@ -10,108 +10,105 @@
   <header class="header">
     <nav class="header__nav">
       <ul>
-        <li><a href="#">ИНФОРМАЦИЯ</a></li>
-        <li><a href="#">ФОТО И ВИДЕО</a></li>
-        <li><a href="#">КАРТА ШТАТА</a></li>
-        <li><a href="#">ГОСТИНИЦЫ</a></li>
+        <li><a href="#">Информация</a></li>
+        <li><a href="#">Фото и Видео</a></li>
+        <li><a href="#">Карта штата</a></li>
+        <li><a href="catalog.html">Гостиницы</a></li>
       </ul>
+      <img class="header__logo" src="img/main-logo.png">
     </nav>
   </header>
   <main class="main">
     <section class="filter">
       <form class="filter__form">
         <div class="filter__item">
-          <h2 class="filter__heading">ИНФРАСТРУКТУРА:</h2>
+          <h2 class="filter__heading">Инфраструктура:</h2>
           <ul class="filter__checkbox">
-            <li><input type="checkbox" id="pool"><label for="pool">БАССЕЙН</label></li>
-            <li><input type="checkbox" id="park"><label for="park">ПАРКОВКА</label></li>
-            <li><input type="checkbox" id="wifi"><label for="wifi">WI-FI</label></li>
+            <li><input type="checkbox" id="pool"><label for="pool">Бассейн</label></li>
+            <li><input type="checkbox" id="park"><label for="park">Парковка</label></li>
+            <li><input type="checkbox" id="wifi"><label for="wifi">Wi-Fi</label></li>
           </ul>
         </div>
         <div class="filter__item">
-          <h2 class="filter__heading">ТИП ЖИЛЬЯ:</h2>
+          <h2 class="filter__heading">Тип жилья:</h2>
           <ul class="filter__checkbox">
-            <li><input type="checkbox" id="hotel"><label for="hotel">ГОСТИНИЦА</label></li>
-            <li><input type="checkbox" id="motel"><label for="motel">МОТЕЛЬ</label></li>
-            <li><input type="checkbox" id="apps"><label for="apps">АПАРТАМЕНТЫ</label></li>
+            <li><input type="checkbox" id="hotel"><label for="hotel">Гостиница</label></li>
+            <li><input type="checkbox" id="motel"><label for="motel">Мотель</label></li>
+            <li><input type="checkbox" id="apps"><label for="apps">Апартаменты</label></li>
           </ul>
         </div>
         <div class="filter__range">
-          <h2 class="filter__heading">СТОИМОСТЬ В СУТКИ (Р):</h2>
+          <h2 class="filter__heading">Стоимость в сутки (Р):</h2>
           <table class="filter__table">
             <tr>
-              <th>ОТ 0</th>
-              <th>ДО 3000</th>
+              <th>От 0</th>
+              <th>До 3000</th>
             </tr>
           </table>
-          <input type="range" min="1" max="5" id="">
-          <button class="filter__btn" type="button">ПОКАЗАТЬ</button>
+          <input type="range" min="1" max="5" id="" multiple>
+          <button class="filter__btn" type="button">Показать</button>
         </div>
       </form>
     </section>
     <section class="sorting">
-      <span class "sorting__count">НАЙДЕНО: 3</span>
+      <span class="sorting__count">Найдено: 3</span>
       <div class="sorting__types">
-        <span class="sorting__heading">СОРТИРОВКА:</span>
-        <a href="#" <span class="sorting__item">ПО ЦЕНЕ</span></a>
-        <a href="#" <span class="sorting__item">ПО ТИПУ</span></a>
-        <a href="#" <span class="sorting__item">ПО РЕЙТИНГУ</span></a>
+        <span class="sorting__heading">Сортировка:</span>
+        <ul class="sorting__list">
+          <li><a href="#" <span class="sorting__item">По цене</span></a></li>
+          <li><a href="#" <span class="sorting__item">По типуУ</span></a></li>
+          <li><a href="#" <span class="sorting__item">По рейтингу</span></a></li>
+        </ul>
+        <div class="arrows">
+          <ul class="arrows__list">
+            <li сlass="arrows__top">вверх</li>
+            <li сlass="arrows__bottom">вниз</li>
+          </ul>
+        </div>
       </div>
     </section>
     <section class="hotels">
       <article class="hotels__item">
         <img src="img/catalog-amara.png" width="1" height="1" alt="AMARA">
-        <h1 class="hotels__heading">AMARA RESORT & SPA</h1>
-        <table class="hotels__cost">
-          <tr>
-            <td>ГОСТИНИЦА</td>
-            <td>ОТ 3500 Р.</td>
-          </tr>
+        <h1 class="hotels__heading">AMARA RESORT &amp; SPA</h1>
+        <div class="hotels__type"><span class="type__name">Гостиница</span></div>
+        <div class="hotels__prise"><span class="prise__count">От 3500 Р.</span></div>
         </table>
-        <a href="#" class="hotels__link hotels__link--blue">ПОДРОБНЕЕ</a>
-        <a href="#" class="hotels__link hotels__link--brown">ЗАБРОНИРОВАТЬ</a>
-        <span class="hotels__rank">РЕЙТИНГ: 8,5</span>
+        <a href="#" class="hotels__link hotels__link--blue">Подробнее</a>
+        <a href="#" class="hotels__link hotels__link--brown">Забронировать</a>
+        <div><span class="hotels__rank">Рейтинг: 8,5</span></div>
       </article>
       <article class="hotels__item">
         <img src="img/catalog-qual.png" width="1" height="1" alt="QUAIL">
         <h1 class="hotels__heading">DESERT QUAIL INN</h1>
-        <table class="hotels__cost">
-          <tr>
-            <td>МОТЕЛЬ</td>
-            <td>ОТ 2000 Р.</td>
-          </tr>
-        </table>
-        <a href="#" class="hotels__link hotels__link--blue">ПОДРОБНЕЕ</a>
-        <a href="#" class="hotels__link hotels__link--brown">ЗАБРОНИРОВАТЬ</a>
-        <span class="hotels__rank">РЕЙТИНГ: 8,9</span>
+        <div class="hotels__type"><span class="type__name">Мотель</span></div>
+        <div class="hotels__prise"><span class="prise__count">От 2000 Р.</span></div>
+        <a href="#" class="hotels__link hotels__link--blue">Подробнее</a>
+        <a href="#" class="hotels__link hotels__link--brown">Забронировать</a>
+        <div><span class="hotels__rank">Рейтинг: 8,9</span></div>
       </article>
       <article class="hotels__item">
         <img src="img/catalog-poco.png" width="1" height="1" alt="POCO">
         <h1 class="hotels__heading">VALLAS AT POCO DIABLO</h1>
-        <table class="hotels__cost">
-          <tr>
-            <td>АПАРТАМЕНТЫ</td>
-            <td>ОТ 4000 Р.</td>
-          </tr>
-        </table>
-        <a href="#" class="hotels__link hotels__link--blue">ПОДРОБНЕЕ</a>
-        <a href="#" class="hotels__link hotels__link--brown">ЗАБРОНИРОВАТЬ</a>
-        <span class="hotels__rank">РЕЙТИНГ: 9,2</span>
+        <div class="hotels__type"><span class="type__name">Апартаменты</span></div>
+        <div class="hotels__prise"><span class="prise__count">От 4000 Р.</span></div>
+        <a href="#" class="hotels__link hotels__link--blue">Подробнее</a>
+        <a href="#" class="hotels__link hotels__link--brown">Забронировать</a>
+        <div><span class="hotels__rank">Рейтинг: 9,2</span></div>
       </article>
     </section>
   </main>
   <footer class="footer">
     <div class="footer__hashtag">
-      <span>#VISITSEDONA</span>
+      <a>#VISITSEDONA</a>
     </div>
     <div class="footer__social">
-      <a class="footer__btn footer__btn__tw" href="#">Twitter</a>
-      <a class="footer__btn footer__btn__fb" href="#">facebook</a>
-      <a class="footer__btn footer__btn__yt" href="#">Youtube</a>
+      <a class="footer__btn footer__btn--tw" href="#">Twitter</a>
+      <a class="footer__btn footer__btn--fb" href="#">facebook</a>
+      <a class="footer__btn footer__btn--yt" href="#">Youtube</a>
     </div>
     <div class="footer__copyright">
-      <p>Website by:</p>
-      <a href="https://htmlacademy.ru/"><img src="img/index-HTMLacademy.png" width="113" height="39" alt="HTML Academy"></a>
+      <a href="https://htmlacademy.ru/"><span>Website by:</span><img src="img/index-HTMLacademy.png" width="113" height="39" alt="HTML Academy"></a>
     </div>
   </footer>
 </body>
