@@ -1,8 +1,15 @@
 body {
   min-width: 1200px;
-  min-height: 2762px;
+  min-height: 933px;
   margin: 0;
   padding: 0;
+}
+
+main {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 0;
 }
 
 
@@ -55,11 +62,12 @@ header {
 
 /*FOOTER*/
 
-.footer > div {
- width: 400px;
+.footer>div {
+  width: 400px;
 }
 
 .footer {
+  background-color: red;
   width: 1200px;
   margin: 0 auto;
   position: relative;
@@ -72,8 +80,8 @@ header {
   font-size: 21px;
   font-weight: bold;
   vertical-align: top;
-  background-color: green;
-
+  padding-top: 29px;
+  padding-bottom: 29px;
 }
 
 .footer__hashtag>a {
@@ -82,14 +90,14 @@ header {
 }
 
 .footer__social {
-  background-color: brown;
   display: inline-block;
+  padding-top: 18px;
+  padding-bottom: 17px;
 }
 
 .footer__btn {
   display: inline-block;
-  vertical-align: middle;
-
+  vertical-align: top;
   width: 46px;
   height: 48px;
   background-color: #81b3d2;
@@ -97,10 +105,11 @@ header {
 }
 
 .footer__copyright {
-  background-color: red;
   display: inline-block;
   vertical-align: top;
-  position: relative;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  font-size: 14px;
 }
 
 .footer__copyright>a {
@@ -108,17 +117,11 @@ header {
   color: #000000;
 }
 
+
 /*FOOTER END*/
 
 
-/*MAIN INDEX?*/
-
-main {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0;
-  font-size: 0;
-}
+/*MAIN INDEX*/
 
 .intro {
   vertical-align: top;
@@ -257,4 +260,125 @@ main {
   line-height: 26px;
   margin-top: 53px;
   background-color: #81B3D2;
+}
+
+
+/*INDEX END*/
+
+
+/*CATALOG?*/
+
+
+/*CLASS FILTER*/
+
+.filter {
+  background-image: url("../img/blured-mountains.jpg");
+}
+
+.filter__item {
+  width: 200px;
+  display: inline-block;
+  font-size: 14px;
+  vertical-align: top;
+  background-color: purple;
+}
+
+.filter__range {
+  width: 800px;
+  display: inline-block;
+  font-size: 14px;
+  vertical-align: top;
+  background-color: red;
+}
+
+.filter__range ul {
+  margin: 0;
+  padding: 0;
+}
+
+.filter__checkbox li {
+  margin-bottom: 24px;
+  list-style: none;
+}
+
+
+/*CLASS FILTER END*/
+
+
+/*CLASS SORTING*/
+
+.sorting {
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+
+.sorting__count {
+  width: 200px;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.sorting__types {
+  display: inline-block;
+  width: 1000px;
+}
+
+.sorting__heading {
+  display: inline-block;
+  font-size: 14px;
+}
+
+.sorting__list {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.sorting__list a {
+  font-size: 14px;
+}
+
+.sorting__list li {
+  display: inline-block;
+}
+
+.arrows {
+  display: inline-block;
+  width: 180px;
+  background-color: red;
+    padding-left: 560px;
+}
+
+.arrows__list {
+  margin: 0;
+  padding: 0;
+}
+
+.arrows__list a{
+  font-size: 14px;
+}
+
+.arrows__list li {
+  display: inline-block;
+}
+/*CLASS SORTING END*/
+
+.hotels__item {
+  display: inline-block;
+  width: 1200px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+    font-size: 14px;
+}
+
+.hotels__img {
+  display: inline-block;
+}
+
+.hotels__info {
+  display: inline-block;
+}
+
+.hotels__rating {
+  display: inline-block;
 }
