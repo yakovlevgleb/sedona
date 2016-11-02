@@ -378,6 +378,8 @@ header {
 
 .filter {
   background-image: url("../img/blured-mountains.jpg");
+  margin: 0;
+  padding: 0;
 }
 
 .filter__item {
@@ -386,10 +388,25 @@ header {
   vertical-align: top;
 }
 
+.filter__item:nth-child(1) {
+  padding-left: 72px;
+  padding-top: 13px;
+}
+
+.filter__item:nth-child(2) {
+  padding-left: 56px;
+  padding-top: 13px;
+}
+
+.filter__checkbox li:nth-child(3) {
+  padding-bottom: 32px;
+}
+
 .filter__range {
-  width: 800px;
+  width: 672px;
   display: inline-block;
   vertical-align: top;
+  box-sizing: border-box;
 }
 
 .filter__range ul {
@@ -398,16 +415,26 @@ header {
 }
 
 .filter__checkbox li {
-  margin-bottom: 24px;
+  margin-top: 25px;
+  padding-left: 5px;
   list-style: none;
+}
+
+.filter__checkbox label {
+  margin-left: 15px;
 }
 
 .filter__heading {
   font-family: 'PT Sans', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
   color: #ffffff;
-  line-height: 26px;
+}
+
+.filter__heading--range {
+  line-height: 21px;
+  padding-top: 13px;
+  padding-left: 273px;
 }
 
 .filter__checkbox {
@@ -415,7 +442,9 @@ header {
   font-size: 14px;
   font-weight: normal;
   color: #ffffff;
-  line-height: 26px;
+  line-height: 21px;
+  margin: 0;
+  padding: 0;
 }
 
 .filter__table {
@@ -423,7 +452,7 @@ header {
   font-size: 14px;
   font-weight: normal;
   color: #ffffff;
-  line-height: 26px;
+  line-height: 21px;
 }
 
 /*CLASS FILTER END*/
@@ -432,58 +461,73 @@ header {
 /*CLASS SORTING*/
 
 .sorting {
-  padding-top: 36px;
-  padding-bottom: 36px;
   background-color: #fefefe;
 }
 
 .sorting__count {
   display: inline-block;
+  vertical-align: top;
+  width: 120px;
   font-family: 'PT Sans', sans-serif;
   font-size: 21px;
   font-weight: bold;
   color: #000000;
   line-height: 26px;
+  padding-left: 72px;
+  padding-top: 28px;
+  padding-bottom: 33px;
+
 }
 
 .sorting__types {
   display: inline-block;
-  width: 1000px;
 }
 
 .sorting__heading {
   display: inline-block;
+  vertical-align: top;
+  width: 120px;
   font-family: 'PT Sans', sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: normal;
   color: #000000;
-  line-height: 26px;
+  line-height: 18px;
+  box-sizing: border-box;
+  padding-left: 44px;
 }
 
 .sorting__list {
   margin: 0;
   padding: 0;
+  width: 300px;
   display: inline-block;
+  vertical-align: top;
+  padding-left: 39px;
 }
 
 .sorting__list a {
   font-family: 'PT Sans', sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: normal;
-  color: #333333;
-  line-height: 26px;
+  color: #b1b1b1;
+  line-height: 18px;
   text-decoration: none;
   border-bottom: 1px dashed #333333;
 }
 
 .sorting__list li {
   display: inline-block;
+  vertical-align: top;
+  padding-right: 32px;
+}
+
+.sorting__list li:nth-child(3) {
+  padding-left: 2px;
 }
 
 .arrows {
   display: inline-block;
-  width: 180px;
-  padding-left: 560px;
+  padding-left: 425px;
 }
 
 .arrows__list {
@@ -496,7 +540,7 @@ header {
   font-size: 14px;
   font-weight: normal;
   color: #333333;
-  line-height: 26px;
+  line-height: 21px;
   text-decoration: none;
 }
 
@@ -509,22 +553,37 @@ header {
 
 .hotels__item {
   display: inline-block;
+  vertical-align: top;
   background-color: #fefefe;
   width: 1200px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  background-color: red;
+  border-top: 1px solid #333333;
 }
 
 .hotels__info {
   display: inline-block;
+  vertical-align: top;
 }
 
 .hotels__rating {
   display: inline-block;
+  vertical-align: top;
+}
+
+.hotels__type {
+white-space: pre-line;
+}
+
+.hotels__prise {
+  white-space: pre-line;
 }
 
 .hotels__img {
   display: inline-block;
+  vertical-align: top;
+  padding-left: 72px;
+  padding-top: 28px;
+  padding-bottom: 32px;
 }
 
 .hotels__heading a{
@@ -536,12 +595,17 @@ header {
   text-decoration: none;
 }
 
+.hotels__heading {
+  padding-left: 31px;
+  padding-top: 22px;
+}
+
 .type__name {
   font-family: 'PT Sans', sans-serif;
   font-size: 14px;
   font-weight: normal;
   color: #333333;
-  line-height: 26px;
+  line-height: 21px;
 }
 
 .prise__count {
@@ -549,7 +613,7 @@ header {
   font-size: 14px;
   font-weight: normal;
   color: #333333;
-  line-height: 26px;
+  line-height: 21px;
 }
 
 .hotels__link {
@@ -557,12 +621,13 @@ header {
   font-size: 14px;
   font-weight: normal;
   color: #333333;
-  line-height: 26px;
+  line-height: 21px;
   text-decoration: none;
 }
 
 .hotels__link--blue {
   display: inline-block;
+  vertical-align: top;
   width: 100px;
   background-color: #81b3d2;
   text-decoration: none;
@@ -570,7 +635,17 @@ header {
 
 .hotels__link--brown {
   display: inline-block;
+  vertical-align: top;
   width: 100px;
   background-color: #766357;
   text-decoration: none;
+}
+
+.hotels__rank {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  color: #666666;
+  line-height: 21px;
+  background-color: #f2f2f2;
 }
