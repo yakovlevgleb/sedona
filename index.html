@@ -11,213 +11,216 @@
 
 <body>
 
-  <!-- HEADER -->
-  <header class="header">
+  <div class="container">
 
-    <!-- HEADER NAVIGATION -->
-    <nav class="header__nav">
-      <ul>
+    <!-- HEADER -->
+    <header class="header">
 
-        <li><a href="#">Информация</a></li>
-        <li><a href="#">Фото и Видео</a></li>
-        <li><a href="#">Карта штата</a></li>
-        <li><a href="catalog.html">Гостиницы</a></li>
+      <!-- HEADER NAVIGATION -->
+      <nav class="header__nav">
+        <ul>
 
-      </ul>
+          <li><a href="#">Информация</a></li>
+          <li><a href="#">Фото и Видео</a></li>
+          <li><a href="#">Карта штата</a></li>
+          <li><a href="catalog.html">Гостиницы</a></li>
 
-      <!-- HEADER LOGO -->
-      <div class="header__logo">
-        <a href="#"><img class="header__logo--img" width="138" height="70" src="img/logo.png" alt="Sedona"></a>
+        </ul>
+
+        <!-- HEADER LOGO -->
+        <div class="header__logo">
+          <a href="#"><img class="header__logo--img" width="138" height="70" src="img/logo.png" alt="Sedona"></a>
+        </div>
+        <!-- HEADER LOGO END -->
+
+      </nav>
+      <!-- HEADER NAVIGATION END -->
+
+    </header>
+    <!-- HEADER END -->
+
+    <!-- MAIN -->
+    <main>
+
+      <!-- TOP IMAGES -->
+      <section class="intro">
+
+        <img src="img/intro-text.png" width="458" height="352" alt="text">
+
+      </section>
+      <!-- TOP IMAGES END -->
+
+      <!-- SLOGAN -->
+      <section class="description">
+        <h2 class="description__slogan">Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <p class="description__causes">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+      </section>
+      <!-- SLOGAN END -->
+
+      <!-- FEATURES BLUE -->
+      <section class="features features--blue">
+
+        <!-- FEATURE DESCRIPTION -->
+        <div class="features__desc">
+          <h2 class="features__name">Настоящий городок</h2>
+          <span class="features__number">&mdash; №1 &mdash;</span>
+          <p>СЕДОНА &mdash; Не аттракцион для туристов, там течёт своя жизнь</p>
+        </div>
+        <!-- FEATURE DESCRIPTION END -->
+
+        <!-- FEATURE IMAGE -->
+        <div class="features__image">
+          <img src="img/town.jpg" width="800" height="256" alt="Town">
+        </div>
+        <!-- FEATURE IMAGE END -->
+
+      </section>
+      <!-- FEATURES BLUE END -->
+
+      <!-- CAUSE -->
+      <section class="cause">
+
+        <!-- CAUSE ITEM -->
+        <div class="cause__item cause__item--home">
+          <!-- <img src="img/icons/flat.png" width="75" height="72" alt="home"> -->
+          <h2 class="cause__name">Жильё</h2>
+          <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+        </div>
+        <!-- CAUSE ITEM END -->
+
+        <!-- CAUSE ITEM -->
+        <div class="cause__item cause__item--burger">
+          <!-- <img src="img/icons/burger.png" width="74" height="70" alt="burger"> -->
+          <h2 class="cause__name">Еда</h2>
+          <p>Всегда заказывайте фирменный бургер. Вы не разочаруетесь!</p>
+        </div>
+        <!-- CAUSE ITEM END -->
+
+        <!-- CAUSE ITEM -->
+        <div class="cause__item cause__item--box">
+          <!-- <img src="img/icons/present.png" width="64" height="76" alt="box"> -->
+          <h2 class="cause__name">Сувениры</h2>
+          <p>Не только китайского, но и местного производства!</p>
+        </div>
+        <!-- CAUSE ITEM END -->
+
+      </section>
+      <!-- CAUSE END -->
+
+      <!-- FEATURES BLUE -->
+      <section class="features features--blue">
+
+        <!-- FEATURE IMAGE -->
+        <div class="features__image">
+          <img src="img/canion.jpg" width="800" height="256" alt="canion">
+        </div>
+        <!-- FEATURE IMAGE END -->
+
+        <!-- FEATURE DESCRIPTION -->
+        <div class="features__desc">
+          <h2 class="features__name">Там есть мост Дьявола</h2>
+          <span class="features__number">&mdash; №2 &mdash;</span>
+          <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+        </div>
+        <!-- FEATURE DESCRIPTION END -->
+
+      </section>
+      <!-- FEATURES BLUE END -->
+
+      <!-- FEATURES GREY -->
+      <section class="features features--grey">
+
+        <!-- FEATURES ITEM -->
+        <div class="features__desc">
+          <h2 class="features__name">Небольшая площадь</h2>
+          <span class="features__number">&mdash; №3 &mdash;</span>
+          <p>Все достопримечательности находятся очень близко</p>
+        </div>
+        <!-- FEATURES ITEM END -->
+
+        <!-- FEATURES ITEM -->
+        <div class="features__desc">
+          <h2 class="features__name">Красивая дорога</h2>
+          <span class="features__number">&mdash; №4 &mdash;</span>
+          <p>Ехать в седону из Лас-Вегаса совсем не скучно!</p>
+        </div>
+        <!-- FEATURES ITEM END -->
+
+        <!-- FEATURES ITEM -->
+        <div class="features__desc">
+          <h2 class="features__name">Мало туристов</h2>
+          <span class="features__number">&mdash; №5 &mdash;</span>
+          <p>Большинство едет в Гранд каньон и толпится там</p>
+        </div>
+        <!-- FEATURES ITEM END -->
+
+      </section>
+      <!-- FEATURES GREY END -->
+
+      <!-- SEARCH HEADER -->
+      <section class="searchtitle">
+        <h3 class="searchtitle__header">Заинтересовались?</h3>
+        <p class="searchtitle__info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <a href="#">Поиск гостиницы в Седоне</a>
+      </section>
+      <!-- SEARCH HEADER END -->
+
+      <!-- SEARCH PANEL -->
+      <section class="search">
+
+        <div class="search__content">
+          <form class="search__form" action="https://echo.htmlacademy.ru" method="get">
+
+            <label>Дата заезда:</label><input type="text" name="datein" value="">
+
+            <label>Дата выезда:</label><input type="text" name="dateout" value="">
+
+            <label>Взрослые:</label><input type="text" name="vzr" value="">
+
+            <label>Дети:</label><input type="text" name="chil" value="">
+
+            <button class="search__btn" type="submit">Найти</button>
+
+          </form>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d526446.994962532!2d-112.00152897207786!3d34.83521457973955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1477464813518"
+              width="1200" height="593" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+
+      </section>
+      <!-- SEARCH PANEL END -->
+
+    </main>
+    <!-- MAIN  END -->
+
+    <!-- FOOTER -->
+    <footer class="footer footer--transparent">
+
+      <!-- FOOTER HASHTAGLINK -->
+      <div class="footer__hashtag">
+        <a href="#">#VISITSEDONA</a>
       </div>
-      <!-- HEADER LOGO END -->
+      <!-- FOOTER HASHTAGLINK END -->
 
-    </nav>
-    <!-- HEADER NAVIGATION END -->
+      <!-- FOOTER SOCIAL LINKS -->
+      <div class="footer__social">
 
-  </header>
-  <!-- HEADER END -->
+        <a class="footer__btn footer__btn--tw" href="#">Twitter</a>
+        <a class="footer__btn footer__btn--fb" href="#">Facebook</a>
+        <a class="footer__btn footer__btn--yt" href="#">Youtube</a>
 
-  <!-- MAIN -->
-  <main>
-
-    <!-- TOP IMAGES -->
-    <section class="intro">
-
-      <img src="img/intro-text.png"  width="458" height="352" alt="text">
-
-    </section>
-    <!-- TOP IMAGES END -->
-
-    <!-- SLOGAN -->
-    <section class="description">
-      <h2 class="description__slogan">Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</h2>
-      <p class="description__causes">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-    </section>
-    <!-- SLOGAN END -->
-
-    <!-- FEATURES BLUE -->
-    <section class="features features--blue">
-
-      <!-- FEATURE DESCRIPTION -->
-      <div class="features__desc">
-        <h2 class="features__name">Настоящий городок</h2>
-        <span class="features__number">&mdash; №1 &mdash;</span>
-        <p>СЕДОНА &mdash; Не аттракцион для туристов, там течёт своя жизнь</p>
       </div>
-      <!-- FEATURE DESCRIPTION END -->
+      <!-- FOOTER SOCIAL LINKS END -->
 
-      <!-- FEATURE IMAGE -->
-      <div class="features__image">
-        <img src="img/town.jpg" width="800" height="256" alt="Town">
+      <!-- FOOTER COPYRIGHT LINKS -->
+      <div class="footer__copyright">
+        <a href="https://htmlacademy.ru/"><span>Website by:</span></a>
       </div>
-      <!-- FEATURE IMAGE END -->
+      <!-- FOOTER COPYRIGHT LINKS END -->
 
-    </section>
-    <!-- FEATURES BLUE END -->
+    </footer>
+    <!-- FOOTER END -->
 
-    <!-- CAUSE -->
-    <section class="cause">
-
-      <!-- CAUSE ITEM -->
-      <div class="cause__item cause__item--home">
-        <!-- <img src="img/icons/flat.png" width="75" height="72" alt="home"> -->
-        <h2 class="cause__name">Жильё</h2>
-        <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-      </div>
-      <!-- CAUSE ITEM END -->
-
-      <!-- CAUSE ITEM -->
-      <div class="cause__item cause__item--burger">
-        <!-- <img src="img/icons/burger.png" width="74" height="70" alt="burger"> -->
-        <h2 class="cause__name">Еда</h2>
-        <p>Всегда заказывайте фирменный бургер. Вы не разочаруетесь!</p>
-      </div>
-      <!-- CAUSE ITEM END -->
-
-      <!-- CAUSE ITEM -->
-      <div class="cause__item cause__item--box">
-        <!-- <img src="img/icons/present.png" width="64" height="76" alt="box"> -->
-        <h2 class="cause__name">Сувениры</h2>
-        <p>Не только китайского, но и местного производства!</p>
-      </div>
-      <!-- CAUSE ITEM END -->
-
-    </section>
-    <!-- CAUSE END -->
-
-    <!-- FEATURES BLUE -->
-    <section class="features features--blue">
-
-      <!-- FEATURE IMAGE -->
-      <div class="features__image">
-        <img src="img/canion.jpg" width="800" height="256" alt="canion">
-      </div>
-      <!-- FEATURE IMAGE END -->
-
-      <!-- FEATURE DESCRIPTION -->
-      <div class="features__desc">
-        <h2 class="features__name">Там есть мост Дьявола</h2>
-        <span class="features__number">&mdash; №2 &mdash;</span>
-        <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-      </div>
-      <!-- FEATURE DESCRIPTION END -->
-
-    </section>
-    <!-- FEATURES BLUE END -->
-
-    <!-- FEATURES GREY -->
-    <section class="features features--grey">
-
-      <!-- FEATURES ITEM -->
-      <div class="features__desc">
-        <h2 class="features__name">Небольшая площадь</h2>
-        <span class="features__number">&mdash; №3 &mdash;</span>
-        <p>Все достопримечательности находятся очень близко</p>
-      </div>
-      <!-- FEATURES ITEM END -->
-
-      <!-- FEATURES ITEM -->
-      <div class="features__desc">
-        <h2 class="features__name">Красивая дорога</h2>
-        <span class="features__number">&mdash; №4 &mdash;</span>
-        <p>Ехать в седону из Лас-Вегаса совсем не скучно!</p>
-      </div>
-      <!-- FEATURES ITEM END -->
-
-      <!-- FEATURES ITEM -->
-      <div class="features__desc">
-        <h2 class="features__name">Мало туристов</h2>
-        <span class="features__number">&mdash; №5 &mdash;</span>
-        <p>Большинство едет в Гранд каньон и толпится там</p>
-      </div>
-      <!-- FEATURES ITEM END -->
-
-    </section>
-    <!-- FEATURES GREY END -->
-
-    <!-- SEARCH HEADER -->
-    <section class="searchtitle">
-      <h3 class="searchtitle__header">Заинтересовались?</h3>
-      <p class="searchtitle__info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <a href="#">Поиск гостиницы в Седоне</a>
-    </section>
-    <!-- SEARCH HEADER END -->
-
-    <!-- SEARCH PANEL -->
-    <section class="search">
-
-      <div class="search__content">
-        <form class="search__form" action="https://echo.htmlacademy.ru" method="get">
-
-          <label>Дата заезда:</label><input type="text" name="datein" value="">
-
-          <label>Дата выезда:</label><input type="text" name="dateout" value="">
-
-          <label>Взрослые:</label><input type="text" name="vzr" value="">
-
-          <label>Дети:</label><input type="text" name="chil" value="">
-
-          <button class="search__btn" type="submit">Найти</button>
-
-        </form>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d526446.994962532!2d-112.00152897207786!3d34.83521457973955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1477464813518"
-      width="1200" height="593" frameborder="0" style="border:0" allowfullscreen></iframe>
-      </div>
-
-    </section>
-    <!-- SEARCH PANEL END -->
-
-  </main>
-  <!-- MAIN  END -->
-
-  <!-- FOOTER -->
-  <footer class="footer">
-
-    <!-- FOOTER HASHTAGLINK -->
-    <div class="footer__hashtag">
-      <a href="#">#VISITSEDONA</a>
-    </div>
-    <!-- FOOTER HASHTAGLINK END -->
-
-    <!-- FOOTER SOCIAL LINKS -->
-    <div class="footer__social">
-
-      <a class="footer__btn footer__btn--tw" href="#">Twitter</a>
-      <a class="footer__btn footer__btn--fb" href="#">Facebook</a>
-      <a class="footer__btn footer__btn--yt" href="#">Youtube</a>
-
-    </div>
-    <!-- FOOTER SOCIAL LINKS END -->
-
-    <!-- FOOTER COPYRIGHT LINKS -->
-    <div class="footer__copyright">
-      <a href="https://htmlacademy.ru/"><span>Website by:</span></a>
-    </div>
-    <!-- FOOTER COPYRIGHT LINKS END -->
-
-  </footer>
-  <!-- FOOTER END -->
-
+  </div>
 </body>
 
 </html>
