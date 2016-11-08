@@ -206,11 +206,12 @@ header {
   font-size: 14px;
   font-weight: 400;
   line-height: 26px;
-  text-align: left;
+  text-align:justify;
   vertical-align: top;
   position: relative;
+
   padding-left: 102px;
-  padding-top: 45px;
+  padding-top: 41px;
   box-sizing: border-box;
 }
 
@@ -218,7 +219,7 @@ header {
   text-decoration: none;
   color: #000000;
   width: 200px;
-  height: 43px;
+  height: 39px;
   display: inline-block;
   background-image: url("../img/icons/sprite.png");
   background-repeat: no-repeat;
@@ -1029,7 +1030,6 @@ input[type="checkbox"]:checked:disabled+label::after {
 .hotels__rating {
   display: inline-block;
   vertical-align: top;
-  position: relative;
   margin-left: 500px;
 }
 
@@ -1044,15 +1044,12 @@ input[type="checkbox"]:checked:disabled+label::after {
   padding-bottom: 3px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-top: 64px;
+  margin-top: 47px;
 }
 
 .hotels__star {
   content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
+  display: inline-block;
   width: 18px;
   height: 17px;
   margin-right: 6px;
