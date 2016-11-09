@@ -160,7 +160,7 @@
       <!-- SEARCH HEADER -->
       <section class="searchtitle">
         <h3 class="searchtitle__header">Заинтересовались?</h3>
-        <p class="searchtitle__info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <p class="searchtitle__info">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a href="#">Поиск гостиницы в Седоне</a>
       </section>
       <!-- SEARCH HEADER END -->
@@ -170,15 +170,18 @@
 
         <div class="search__content">
           <form class="search__form" action="https://echo.htmlacademy.ru" method="get">
-
-            <label>Дата заезда:</label><input type="text" name="datein" value="">
-
-            <label>Дата выезда:</label><input type="text" name="dateout" value="">
-
-            <label>Взрослые:</label><input type="text" name="vzr" value="">
-
-            <label>Дети:</label><input type="text" name="chil" value="">
-
+            <div>
+              <label for="datein">Дата заезда:</label><input type="text" id="datein" name="datein" value="">
+            </div>
+            <div>
+              <label for="dateout">Дата выезда:</label><input type="text" id="dateout" name="dateout" value="">
+            </div>
+            <div>
+              <label for="vzrosl">Взрослые:</label><input type="text" id="vzrosl" name="vzr" value="">
+            </div>
+            <div>
+              <label for="children">Дети:</label><input type="text" id="children" name="chil" value="">
+            </div>
             <button class="search__btn" type="submit">Найти</button>
 
           </form>

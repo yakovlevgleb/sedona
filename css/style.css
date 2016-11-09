@@ -1,3 +1,13 @@
+/*делай по порядку
+?1) Добавить фон для боди
+форма на 2 странице
+
+5) пиксель перфект всех страниц
+6) прогрессивное улучшение (переполнение, картинки, фомы)
+8) Пнуть меня чтобы все хорошенько проверил
+9) js формы на главной
+*/
+
 
 body {
   min-width: 1200px;
@@ -5,7 +15,7 @@ body {
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   color: #000000;
   text-transform: uppercase;
   background-color: #ffffff;
@@ -206,33 +216,40 @@ header {
   font-size: 14px;
   font-weight: 400;
   line-height: 26px;
-  text-align:justify;
-  vertical-align: top;
+  vertical-align: middle;
   position: relative;
-
   padding-left: 102px;
-  padding-top: 41px;
+  padding-top: 12px;
   box-sizing: border-box;
 }
 
-.footer__copyright>a {
+.footer__copyright span {
+  display: inline-block;
+  color: #000000;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.footer__copyright span::after {
+  content: "";
+  display: inline-block;
   text-decoration: none;
   color: #000000;
-  width: 200px;
+  width: 113px;
   height: 39px;
-  display: inline-block;
   background-image: url("../img/icons/sprite.png");
   background-repeat: no-repeat;
-  background-position: 70px -658px;
-  vertical-align: top;
+  background-position: -10px -654px;
+  vertical-align: middle;
+  margin-left: 6px;
 }
 
-.footer__copyright>a:hover {
-  background-position: 70px -776px;
+.footer__copyright span:hover::after{
+  background-position: -10px -772px;
 }
 
-.footer__copyright>a:active {
-  background-position: 70px -717px;;
+.footer__copyright span:active::after{
+  background-position: -10px -713px
 }
 
 .footer--transparent {
@@ -448,13 +465,13 @@ header {
 .searchtitle {
   text-align: center;
   background-color: #ffffff;
+  padding-top: 54px;
 }
 
 .searchtitle__header {
   font-size: 30px;
   color: #000000;
   line-height: 26px;
-  margin-top: 54px;
   margin-bottom: 28px;
 }
 
@@ -463,8 +480,7 @@ header {
   font-weight: 400;
   color: #333333;
   line-height: 26px;
-  padding-left: 453px;
-  padding-right: 453px;
+  margin-bottom: 44px;
 }
 
 .searchtitle a {
@@ -472,7 +488,8 @@ header {
   width: 568px;
   background-color: #766357;
   text-decoration: none;
-  padding-top: 36px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   font-size: 21px;
   color: #ffffff;
   line-height: 26px;
@@ -480,45 +497,67 @@ header {
 
 .search {
   width: 1200px;
-  height: 476px;
+  height: 493px;
   position: relative;
 }
 
 .search__form {
-  display: inline-block;
   width: 568px;
   background-color: #ffffff;
+  position: absolute;
+  left: 316px;
+  padding-top: 55px;
+  padding-bottom: 55px;
+  padding-left: 55px;
+  padding-right: 48px;
+  box-sizing: border-box;
 }
 
-.search__form input[type="text"] {
+.search__form div {
   display: inline-block;
-  vertical-align: middle;
-  box-sizing: border-box;
-  width: 346px;
-  height: 38px;
-  padding: 10px 40px 10px 12px;
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: bold;
-  color: inherit;
-  text-transform: inherit;
-  background-color: #f2f2f2;
-  outline: none;
-  border: 2px solid #f2f2f2;
-  color: #000000;
+  vertical-align: top;
+  margin-bottom: 29px;
 }
 
 .search__form label {
-  display: inline-block;
-  vertical-align: middle;
-  width: 101px;
-  margin-right: 11px;
-  font-weight: bold;
   font-size: 14px;
   line-height: 26px;
-  text-align: left;
-  font-family: 'PT Sans', sans-serif;
+  display: inline-block;
+  vertical-align:middle;
   color: #000000;
+}
+
+.search__form [id="datein"] {
+  margin-left: 18px;
+}
+.search__form [id="dateout"] {
+margin-left: 14px;
+}
+.search__form [id="vzrosl"]{
+margin-left: 35px;
+margin-right: 53px;
+}
+.search__form [id="children"]{
+margin-left: 27px;
+}
+
+.search__form input {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  color: #000000;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  background: #f2f2f2;
+  width: 346px;
+  height: 38px;
+}
+
+.search__form #vzrosl,
+.search__form #children {
+  width: 114px;
 }
 
 .search__btn {
@@ -923,8 +962,12 @@ input[type="checkbox"]:checked:disabled+label::after {
   display: inline-block;
   vertical-align: top;
   background-color: #fefefe;
-  border-top: 2px solid #e5e5e5;
+  border-top: 1px solid #e5e5e5;
   width: 1200px;
+}
+
+.hotels__item:nth-child(3) {
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .hotels__img {
