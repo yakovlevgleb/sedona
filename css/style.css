@@ -1,5 +1,4 @@
 /*делай по порядку
-?1) Добавить фон для боди
 форма на 2 странице
 
 5) пиксель перфект всех страниц
@@ -18,7 +17,7 @@ body {
   font-family: "PT Sans", Arial, sans-serif;
   color: #000000;
   text-transform: uppercase;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
 }
 
 .container {
@@ -595,7 +594,7 @@ margin-left: 27px;
   padding-top: 30px;
   padding-left: 72px;
   padding-right: 72px;
-  padding-bottom: 30px;
+  padding-bottom: 32px;
 }
 
 
@@ -605,12 +604,21 @@ margin-left: 27px;
   background-image: url("../img/blured-mountains.jpg");
   margin: 0;
   padding: 0;
+
+}
+
+.filter__form {
+  padding-top: 25px;
 }
 
 .filter__item {
   width: 200px;
   display: inline-block;
   vertical-align: top;
+}
+
+.filter__item:nth-child(2){
+  margin-left: 55px;
 }
 
 .filter__range {
@@ -620,7 +628,7 @@ margin-left: 27px;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
-  margin-left: 250px;
+  margin-left: 273px;
 }
 
 .filter__checkbox li {
@@ -631,117 +639,6 @@ margin-left: 27px;
   font-size: 16px;
   line-height: 21px;
   color: #ffffff;
-}
-
-.filter__heading--range {
-  margin-bottom: 9px;
-}
-
-.filter__price__controls {
-  height: 36px;
-  margin-bottom: 20px;
-  position: relative;
-  border: 2px solid #ffffff;
-  border-radius: 2px;
-}
-
-.filter__price__controls::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 2px;
-  height: 22px;
-  background: #ffffff;
-  transform: translate(-50%, -50%);
-}
-
-.filter__price__controls label {
-  display: inline-block;
-  color: #ffffff;
-  font-size: 14px;
-  line-height: 38px;
-  vertical-align: top;
-  cursor: pointer;
-}
-
-.filter__price__controls .price--min, .filter__price__controls .price--max {
-  width: 90px;
-  padding-left: 65px;
-}
-
-.filter__price__controls input {
-  width: 50px;
-  margin: 0;
-  color: inherit;
-  font: inherit;
-  background: none;
-  border: none;
-}
-
-.filter__range__controls {
-  position: relative;
-  margin-bottom: 32px;
-}
-
-.filter__range__controls .range__scale {
-  height: 2px;
-  background: rgba(255, 255, 255, 0.3);
-}
-
-.filter__range__controls .range__bar {
-  width: 80%;
-  height: 2px;
-  background: #ffffff;
-}
-
-.range__toggle {
-  position: absolute;
-  top: -9px;
-  width: 4px;
-  height: 4px;
-  background: #ababab;
-  border: 8px solid #ffffff;
-  border-radius: 50%;
-  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
-  cursor: pointer;
-}
-
-.range__toggle:hover {
-  background: #1c4f80;
-}
-
-.range__toggle--min {
-  left: 0;
-}
-
-.range__toggle--max {
-  left: 80%;
-}
-
-.filter__btn {
-  display: block;
-  margin: 0 auto;
-  padding: 6px 35px;
-  font-size: 14px;
-  line-height: 20px;
-  color: #ffffff;
-  text-transform: uppercase;
-  background: transparent;
-  border: 2px solid #ffffff;
-  border-radius: 2px;
-  cursor: pointer;
-}
-
-.filter__btn:hover {
-  color: #000000;
-  background-color: #ffffff;
-}
-
-
-.filter__btn :hover {
-  color: #000000;
-  background: #ffffff;
 }
 
 .filter__checkbox {
@@ -757,8 +654,8 @@ input[type="checkbox"] {
 
 input[type="checkbox"]+label {
   display: block;
-  margin: 10px 0;
-  padding-left: 45px;
+  padding-left: 40px;
+  margin-top: 25px;
   position: relative;
   cursor: pointer;
 }
@@ -816,6 +713,124 @@ input[type="checkbox"]:checked:disabled+label::after {
   background-position: -10px -400px;
 }
 
+.filter__heading--range {
+  margin-bottom: 7px;
+}
+
+.filter__price__controls {
+  height: 36px;
+  margin-bottom: 20px;
+  position: relative;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  margin-left: 9px;
+}
+
+.filter__price__controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 22px;
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.filter__price__controls label {
+  display: inline-block;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.filter__price__controls .price--min {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.filter__price__controls .price--max {
+  width: 90px;
+  padding-left: 52px;
+  padding-right: 13px;
+}
+
+.filter__price__controls input {
+  width: 50px;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none;
+}
+
+.filter__range__controls {
+  position: relative;
+  margin-bottom: 32px;
+  margin-left: 10px;
+}
+
+.filter__range__controls .range__scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.filter__range__controls .range__bar {
+  width: 80%;
+  height: 2px;
+  background: #ffffff;
+}
+
+.range__toggle {
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range__toggle:hover {
+  background: #1c4f80;
+}
+
+.range__toggle--min {
+  left: 0;
+}
+
+.range__toggle--max {
+  left: 80%;
+}
+
+.filter__btn {
+  display: block;
+  margin: 0 auto;
+  padding: 5px 31px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.filter__btn:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+
+.filter__btn :hover {
+  color: #000000;
+  background: #ffffff;
+}
 
 /*CLASS FILTER END*/
 
@@ -899,19 +914,24 @@ input[type="checkbox"]:checked:disabled+label::after {
 
 .arrows {
   display: inline-block;
-  padding-left: 425px;
+  vertical-align: bottom;
+  margin-left: 442px;
+}
+
+.arrows__list li {
+  display: inline-block;
+  vertical-align: top;
 }
 
 .arrows__list a {
-  font-family: 'PT Sans', sans-serif;
   font-size: 14px;
-  font-weight: normal;
+  font-weight: 400;
   color: #333333;
   line-height: 21px;
   text-decoration: none;
-  padding-left: 13px;
   position: relative;
   cursor: pointer;
+  text-align: right;
 }
 
 .arrow--top::before,
@@ -949,10 +969,7 @@ input[type="checkbox"]:checked:disabled+label::after {
   background-repeat: no-repeat;
   background-position: -10px -10px;
   transform: rotate(180deg);
-}
-
-.arrows__list li {
-  display: inline-block;
+  margin-left: 22px;
 }
 
 
@@ -964,6 +981,7 @@ input[type="checkbox"]:checked:disabled+label::after {
   background-color: #fefefe;
   border-top: 1px solid #e5e5e5;
   width: 1200px;
+  margin-top: -2px;
 }
 
 .hotels__item:nth-child(3) {
@@ -979,11 +997,12 @@ input[type="checkbox"]:checked:disabled+label::after {
   display: inline-block;
   vertical-align: top;
   margin-left: 30px;
+  margin-top: -4px;
 }
 
 .hotels__heading {
   line-height: 0;
-  margin-bottom: 18px;
+  margin-bottom: 7px;
 }
 
 .hotels__heading a:hover {
@@ -1006,7 +1025,7 @@ input[type="checkbox"]:checked:disabled+label::after {
   font-weight: 400;
   color: #333333;
   line-height: 21px;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
 }
 
 .hotels__link {
@@ -1015,9 +1034,9 @@ input[type="checkbox"]:checked:disabled+label::after {
   color: #ffffff;
   line-height: 21px;
   padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 4px;
-  padding-bottom: 4px;
+  padding-right: 18px;
+  padding-top: 3px;
+  padding-bottom: 3px;
 }
 
 .hotels__link--blue {
@@ -1033,7 +1052,6 @@ input[type="checkbox"]:checked:disabled+label::after {
   background-color: #5496bd;
   color: rgba(255, 255, 255, 0.3);
 }
-
 
 .hotels__link--brown {
   background-color: #766357;
@@ -1067,17 +1085,33 @@ input[type="checkbox"]:checked:disabled+label::after {
   font-weight: 400;
   color: #333333;
   line-height: 21px;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
 }
 
 .hotels__rating {
   display: inline-block;
   vertical-align: top;
-  margin-left: 500px;
+  margin-left: 519px;
+}
+
+.stars {
+  text-align: right;
+}
+
+.hotels__star {
+  content: "";
+  display: inline-block;
+  vertical-align: top;
+  width: 18px;
+  height: 17px;
+  margin-left: 6px;
+  background: url("../img/icons/sprite.png") no-repeat center;
+  background-position: -10px -1089px;
 }
 
 .hotels__rank {
   display: block;
+  vertical-align: middle;
   font-size: 14px;
   font-weight: 400;
   color: #666666;
@@ -1087,15 +1121,5 @@ input[type="checkbox"]:checked:disabled+label::after {
   padding-bottom: 3px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-top: 47px;
-}
-
-.hotels__star {
-  content: "";
-  display: inline-block;
-  width: 18px;
-  height: 17px;
-  margin-right: 6px;
-  background: url("../img/icons/sprite.png") no-repeat center;
-  background-position: -10px -1089px;
+  margin-top: 45px;
 }
