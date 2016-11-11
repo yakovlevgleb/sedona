@@ -1,7 +1,6 @@
 /*делай по порядку
-форма на 2 странице
+форму на передней!!
 
-5) пиксель перфект всех страниц
 6) прогрессивное улучшение (переполнение, картинки, фомы)
 8) Пнуть меня чтобы все хорошенько проверил
 9) js формы на главной
@@ -218,7 +217,7 @@ header {
   vertical-align: middle;
   position: relative;
   padding-left: 102px;
-  padding-top: 12px;
+  padding-top: 20px;
   box-sizing: border-box;
 }
 
@@ -240,7 +239,7 @@ header {
   background-repeat: no-repeat;
   background-position: -10px -654px;
   vertical-align: middle;
-  margin-left: 6px;
+  margin-left: 8px;
 }
 
 .footer__copyright span:hover::after{
@@ -484,6 +483,7 @@ header {
 
 .searchtitle a {
   display: inline-block;
+  vertical-align: middle;
   width: 568px;
   background-color: #766357;
   text-decoration: none;
@@ -1033,8 +1033,8 @@ input[type="checkbox"]:checked:disabled+label::after {
   font-size: 14px;
   color: #ffffff;
   line-height: 21px;
-  padding-left: 16px;
-  padding-right: 18px;
+  padding-left: 17px;
+  padding-right: 17px;
   padding-top: 3px;
   padding-bottom: 3px;
 }
@@ -1091,7 +1091,7 @@ input[type="checkbox"]:checked:disabled+label::after {
 .hotels__rating {
   display: inline-block;
   vertical-align: top;
-  margin-left: 519px;
+  margin-left: 523px;
 }
 
 .stars {
@@ -1119,7 +1119,7 @@ input[type="checkbox"]:checked:disabled+label::after {
   background-color: #f2f2f2;
   padding-top: 3px;
   padding-bottom: 3px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-top: 45px;
+  padding-left: 16px;
+  padding-right: 14px;
+  margin-top: 46px;
 }
