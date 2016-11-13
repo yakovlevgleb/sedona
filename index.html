@@ -170,17 +170,25 @@
 
         <div class="search__content">
           <form class="search__form" action="https://echo.htmlacademy.ru" method="get">
-            <div>
-              <label for="datein">Дата заезда:</label><input type="text" id="datein" name="datein" value="24 апреля 2016">
+            <div class="search__form__item">
+              <label for="datein">Дата заезда:</label>
+              <input type="text" id="datein" name="datein" value="24 апреля 2016">
             </div>
-            <div>
-              <label for="dateout">Дата выезда:</label><input type="text" id="dateout" name="dateout" value="4 июля 2016">
+            <div class="search__form__item">
+              <label for="dateout">Дата выезда:</label>
+              <input type="text" id="dateout" name="dateout" value="4 июля 2016">
             </div>
-            <div>
-              <label for="vzrosl">Взрослые:</label><input type="text" id="vzrosl" name="vzr" value="2">
+            <div class="search__form__item">
+              <label for="vzrosl">Взрослые:</label>
+              <div class="form__item--narrow">
+                <input type="text" id="vzrosl" name="vzr" value="2">
+              </div>
             </div>
-            <div>
-              <label for="children">Дети:</label><input type="text" id="children" name="chil" value="0">
+            <div class="search__form__item">
+              <label for="children">Дети:</label>
+              <div class="form__item--narrow">
+                <input type="text" id="children" name="chil" value="0">
+              </div>
             </div>
             <button class="search__btn" type="submit">Найти</button>
 

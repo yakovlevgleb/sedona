@@ -122,6 +122,7 @@ header {
 .footer {
   background-color: #ffffff;
   width: 1200px;
+  min-height: 120px;
   margin: 0 auto;
   position: relative;
   color: #000000;
@@ -494,28 +495,44 @@ header {
   line-height: 26px;
 }
 
+/*SEARCH FORM*/
+
 .search {
   width: 1200px;
-  height: 493px;
+  min-height: 593px;
   position: relative;
+  background: url("../img/map.jpg") #cbdda9 no-repeat;
+  position: relative;
+  margin-bottom: -120px;
+  z-index: 0;
 }
 
 .search__form {
-  width: 568px;
-  background-color: #ffffff;
   position: absolute;
-  left: 316px;
-  padding-top: 55px;
-  padding-bottom: 55px;
-  padding-left: 55px;
-  padding-right: 48px;
+  top: 0;
+  left: 50%;
+  margin-left: -284px;
+  background-color: #ffffff;
+  width: 568px;
+  padding: 55px;
   box-sizing: border-box;
 }
 
-.search__form div {
+.search__form input {
   display: inline-block;
-  vertical-align: top;
-  margin-bottom: 29px;
+  vertical-align: middle;
+  font-size: 14px;
+  color: #000000;
+  line-height: 26px;
+  font-weight: 700;
+  font-family: 'PT Sans', sans-serif;
+  text-transform: uppercase;
+  border: none;
+  background: #f2f2f2;
+  width: 346px;
+  height: 38px;
+  padding-left: 15px;
+  box-sizing: border-box;
 }
 
 .search__form label {
@@ -526,38 +543,6 @@ header {
   color: #000000;
 }
 
-.search__form [id="datein"] {
-  margin-left: 18px;
-}
-.search__form [id="dateout"] {
-margin-left: 14px;
-}
-.search__form [id="vzrosl"]{
-margin-left: 35px;
-margin-right: 53px;
-}
-.search__form [id="children"]{
-margin-left: 27px;
-}
-
-.search__form input {
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 14px;
-  color: #000000;
-  line-height: 26px;
-  font-weight: bold;
-  text-transform: uppercase;
-  border: none;
-  background: #f2f2f2;
-  width: 346px;
-  height: 38px;
-}
-
-.search__form #vzrosl,
-.search__form #children {
-  width: 114px;
-}
 
 .search__btn {
   display: inline-block;
