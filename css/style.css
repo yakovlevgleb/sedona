@@ -514,6 +514,7 @@ header {
   width: 568px;
   padding: 55px;
   box-sizing: border-box;
+
 }
 
 .search__form input {
@@ -638,9 +639,40 @@ header {
   display: block;
   width: 12px;
   height: 3px;
-  background-position: -10px -831px
+  top: 18px;
+  left: 13px;
   background-image: url("../img/icons/sprite.png");
   background-repeat: no-repeat;
+  background-position: -10px -831px
+}
+
+.search__form__btn--minus:hover::before{
+  background-position: -10px -877px;
+}
+
+.search__form__btn--minus:active::before{
+  background-position: -10px -854px;
+}
+
+.search__form__btn--plus::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 11px;
+  height: 11px;
+  top: 14px;
+  right: 14px;
+  background-image: url("../img/icons/sprite.png");
+  background-repeat: no-repeat;
+  background-position: -10px -900px;
+}
+
+.search__form__btn--plus:hover::before{
+  background-position: -10px -962px;
+}
+
+.search__form__btn--plus:active::before{
+  background-position: -10px -931px;
 }
 
 .search__btn {
