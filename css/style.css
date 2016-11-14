@@ -1,7 +1,5 @@
 /*делай по порядку
-форму на передней!!
 
-6) прогрессивное улучшение (переполнение, картинки, фомы)
 8) Пнуть меня чтобы все хорошенько проверил
 9) js формы на главной
 */
@@ -535,6 +533,77 @@ header {
   box-sizing: border-box;
 }
 
+.search__form input:hover,
+.search__form__btn--plus:hover,
+.search__form__btn--minus:hover {
+  background-color: #ebebeb;
+}
+
+.search__form input:active,
+.search__form input:focus {
+  background: none;
+  border: 2px #ebebeb solid;
+}
+
+.search__form__item {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 29px;
+  position: relative;
+}
+
+.search__form__item:nth-child(1)::before,
+.search__form__item:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right:9px;
+  display: block;
+  width: 21px;
+  height: 22px;
+  background-position: -10px -190px;
+  background-image: url("../img/icons/sprite.png");
+  background-repeat: no-repeat;
+}
+
+.search__form__item:nth-child(1):hover::before,
+.search__form__item:nth-child(2):hover::before{
+  background-position: -10px -274px;
+}
+
+.search__form__item:nth-child(1):active::before,
+.search__form__item:nth-child(2):active::before{
+  background-position: -10px -232px;
+}
+
+.search__form__item:nth-child(1) label{
+  margin-right: 23px;
+}
+
+.search__form__item:nth-child(2) label{
+  margin-right: 19px;
+}
+
+.search__form__item:nth-child(3) label{
+  margin-right: 40px;
+}
+
+.search__form__item:nth-child(4) label{
+  margin-right: 27px;
+  margin-left: 52px;
+}
+
+.form__item--narrow {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+
+.form__item--narrow input {
+  padding: 0;
+  text-align: center;
+}
+
 .search__form label {
   font-size: 14px;
   line-height: 26px;
@@ -543,6 +612,36 @@ header {
   color: #000000;
 }
 
+.form__item--narrow input {
+  width: 38px;
+}
+
+.form__item--narrow button{
+  display: inline-block;
+  vertical-align: middle;
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  font-size: 14px;
+  line-height: 38px;
+  text-align: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #a9a9a9;
+  background-color: #f2f2f2;
+}
+
+.search__form__btn--minus::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 12px;
+  height: 3px;
+  background-position: -10px -831px
+  background-image: url("../img/icons/sprite.png");
+  background-repeat: no-repeat;
+}
 
 .search__btn {
   display: inline-block;
@@ -555,7 +654,7 @@ header {
   font-size: 21px;
   padding: 15px 20px 17px;
   line-height: 26px;
-  margin-top: 53px;
+  margin-top: 27px;
   font-weight: bold;
   background-color: #81B3D2;
 }
@@ -1076,7 +1175,7 @@ input[type="checkbox"]:checked:disabled+label::after {
 .hotels__rating {
   display: inline-block;
   vertical-align: top;
-  margin-left: 523px;
+  margin-left: 519px;
 }
 
 .stars {
