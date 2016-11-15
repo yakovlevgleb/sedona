@@ -172,17 +172,17 @@
           <form class="search__form" action="https://echo.htmlacademy.ru" method="get">
             <div class="search__form__item">
               <label for="datein">Дата заезда:</label>
-              <input type="text" id="datein" name="datein" value="24 апреля 2016">
+              <input type="text" id="datein" name="datein" value="24 апреля 2016" required>
             </div>
             <div class="search__form__item">
               <label for="dateout">Дата выезда:</label>
-              <input type="text" id="dateout" name="dateout" value="4 июля 2016">
+              <input type="text" id="dateout" name="dateout" value="4 июля 2016" required>
             </div>
             <div class="search__form__item">
-              <label for="vzrosl">Взрослые:</label>
+              <label for="adult">Взрослые:</label>
               <div class="form__item--narrow">
                 <button class="search__form__btn--minus" type="button"></button>
-                <input type="text" id="vzrosl" name="vzr" value="2">
+                <input type="text" id="adult" name="adult" value="2" required>
                 <button class="search__form__btn--plus" type="button"></button>
               </div>
             </div>
@@ -190,7 +190,7 @@
               <label for="children">Дети:</label>
               <div class="form__item--narrow">
                 <button class="search__form__btn--minus" type="button"></button>
-                <input type="text" id="children" name="chil" value="0">
+                <input type="text" id="children" name="children" value="0" required>
                 <button class="search__form__btn--plus" type="button"></button>
               </div>
             </div>
@@ -236,6 +236,29 @@
     <!-- FOOTER END -->
 
   </div>
+  <script>
+    var link = document.querySelector(".searchtitle a");
+
+    var form = document.querySelector(".search__form");
+
+    link.addEventListener("click", function(event) {
+      event.preventDefault();
+      form.classList.add("search__form--show");
+    });
+
+    link.addEventListener("click", function(event) {
+      event.preventDefault();
+      form.classList.add("search__form--show");
+    });
+
+    window.addEventListener("keydown", function(event) {
+        if (event.keyCode === 27) {
+          if (form.classList.contains("search__form--show")) {
+            form.classList.remove("search__form--show");
+          }
+        }
+      });
+  </script>
 </body>
 
 </html>
