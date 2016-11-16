@@ -59,6 +59,7 @@ header {
 .header__nav a {
   color: #000000;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .header__nav a:hover {
@@ -87,6 +88,7 @@ header {
 
 .header__nav li {
   display: inline-block;
+  vertical-align: top;
   width: 240px;
   font-size: 14px;
   line-height: 26px;
@@ -268,8 +270,8 @@ header {
   width: 1200px;
   height: 508px;
   position: relative;
-  background-color: #ffffff;
-  background: url("../img/mountains2.jpg") no-repeat;
+  background: url("../img/mountains2.jpg") no-repeat ;
+  background-color: #31424b;
   background-position: 0 -56px;
 }
 
@@ -299,7 +301,7 @@ header {
 }
 
 .description__slogan {
-  display: block;
+  display: inline-block;
   font-size: 21px;
   color: #000000;
   line-height: 26px;
@@ -307,7 +309,8 @@ header {
 }
 
 .description__causes {
-  display: block;
+  display: inline-block;
+  vertical-align: top;
   font-size: 14px;
   font-weight: 400;
   color: #333333;
@@ -317,6 +320,7 @@ header {
 
 .features__desc {
   display: inline-block;
+  vertical-align: top;
   width: 400px;
   padding-top: 24px;
   text-align: center;
@@ -484,7 +488,7 @@ header {
 
 .searchtitle a {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
   width: 568px;
   background-color: #766357;
   text-decoration: none;
@@ -640,8 +644,6 @@ header {
   }
 }
 
-
-
 .search {
   width: 1200px;
   min-height: 593px;
@@ -675,7 +677,7 @@ header {
   color: #000000;
   line-height: 26px;
   font-weight: 700;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   text-transform: uppercase;
   border: none;
   background: #f2f2f2;
@@ -684,13 +686,17 @@ header {
   padding-left: 15px;
   box-sizing: border-box;
   animation: right 0.7s;
+  animation: minimise 0.7s;
 }
 
-.search__form input:hover, .search__form__btn--plus:hover, .search__form__btn--minus:hover {
+.search__form input:hover,
+.search__form__btn--plus:hover,
+.search__form__btn--minus:hover {
   background-color: #ebebeb;
 }
 
-.search__form input:active, .search__form input:focus {
+.search__form input:active,
+.search__form input:focus {
   background: none;
   border: 2px #ebebeb solid;
 }
@@ -702,7 +708,7 @@ header {
   position: relative;
 }
 
-.search__form__item:nth-child(1)::before, .search__form__item:nth-child(2)::before {
+.search__form__item a::before {
   content: "";
   position: absolute;
   top: 8px;
@@ -716,11 +722,11 @@ header {
   animation: right 0.7s;
 }
 
-.search__form__item:nth-child(1):hover::before, .search__form__item:nth-child(2):hover::before {
+.search__form__item a:hover::before {
   background-position: -10px -274px;
 }
 
-.search__form__item:nth-child(1):active::before, .search__form__item:nth-child(2):active::before {
+.search__form__item a:active::before {
   background-position: -10px -232px;
 }
 
@@ -828,7 +834,7 @@ header {
 .search__btn {
   display: inline-block;
   border: none;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   text-transform: uppercase;
   color: #ffffff;
   border-radius: 0;
@@ -852,7 +858,6 @@ header {
   color: rgba(255, 255, 255, 0.3);
 }
 
-
 /*INDEX END*/
 
 
@@ -871,6 +876,7 @@ header {
 
 .filter {
   background-image: url("../img/blured-mountains.jpg");
+  background-color: #31424b;
   margin: 0;
   padding: 0;
 }
@@ -1258,13 +1264,23 @@ input[type="checkbox"]:checked:disabled+label::after {
 .hotels__img {
   display: inline-block;
   vertical-align: top;
+  width: 135px;
 }
 
 .hotels__info {
   display: inline-block;
   vertical-align: top;
-  margin-left: 30px;
-  margin-top: -4px;
+  width: 600px;
+  padding-left: 30px;
+  margin-top: -5px;
+}
+
+.hotels__rating {
+  display: inline-block;
+  vertical-align: top;
+  text-align: right;
+
+  width: 290px;
 }
 
 .hotels__heading {
@@ -1284,10 +1300,11 @@ input[type="checkbox"]:checked:disabled+label::after {
   display: inline-block;
   vertical-align: top;
   margin-right: 6px;
+  width: 110px;
 }
 
 .type__name {
-  display: block;
+  display: inline-block;
   font-size: 14px;
   font-weight: 400;
   color: #333333;
@@ -1296,7 +1313,7 @@ input[type="checkbox"]:checked:disabled+label::after {
 }
 
 .hotels__link {
-  display: block;
+  display: inline-block;
   font-size: 14px;
   color: #ffffff;
   line-height: 21px;
@@ -1337,6 +1354,7 @@ input[type="checkbox"]:checked:disabled+label::after {
 .hotels__prise {
   display: inline-block;
   vertical-align: top;
+  width: 142px;
 }
 
 .hotels__heading a {
@@ -1347,22 +1365,12 @@ input[type="checkbox"]:checked:disabled+label::after {
 }
 
 .prise__count {
-  display: block;
+  display:  inline-block;
   font-size: 14px;
   font-weight: 400;
   color: #333333;
   line-height: 21px;
   margin-bottom: 13px;
-}
-
-.hotels__rating {
-  display: inline-block;
-  vertical-align: top;
-  margin-left: 519px;
-}
-
-.stars {
-  text-align: right;
 }
 
 .hotels__star {
@@ -1377,8 +1385,8 @@ input[type="checkbox"]:checked:disabled+label::after {
 }
 
 .hotels__rank {
-  display: block;
-  vertical-align: middle;
+  display: inline-block;
+  vertical-align: top;
   font-size: 14px;
   font-weight: 400;
   color: #666666;
@@ -1387,6 +1395,6 @@ input[type="checkbox"]:checked:disabled+label::after {
   padding-top: 3px;
   padding-bottom: 3px;
   padding-left: 16px;
-  padding-right: 14px;
+  padding-right: 13px;
   margin-top: 46px;
 }

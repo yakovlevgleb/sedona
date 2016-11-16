@@ -29,7 +29,7 @@
 
         <!-- HEADER LOGO -->
         <div class="header__logo">
-          <a href="#"><img class="header__logo--img" width="138" height="70" src="img/logo.png" alt="Sedona"></a>
+          <a><img class="header__logo--img" width="138" height="70" src="img/logo.png" alt="Sedona"></a>
         </div>
         <!-- HEADER LOGO END -->
 
@@ -82,7 +82,6 @@
 
         <!-- CAUSE ITEM -->
         <div class="cause__item cause__item--home">
-          <!-- <img src="img/icons/flat.png" width="75" height="72" alt="home"> -->
           <h2 class="cause__name">Жильё</h2>
           <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
         </div>
@@ -90,7 +89,6 @@
 
         <!-- CAUSE ITEM -->
         <div class="cause__item cause__item--burger">
-          <!-- <img src="img/icons/burger.png" width="74" height="70" alt="burger"> -->
           <h2 class="cause__name">Еда</h2>
           <p>Всегда заказывайте фирменный бургер. Вы не разочаруетесь!</p>
         </div>
@@ -98,7 +96,6 @@
 
         <!-- CAUSE ITEM -->
         <div class="cause__item cause__item--box">
-          <!-- <img src="img/icons/present.png" width="64" height="76" alt="box"> -->
           <h2 class="cause__name">Сувениры</h2>
           <p>Не только китайского, но и местного производства!</p>
         </div>
@@ -161,7 +158,7 @@
       <section class="searchtitle">
         <h3 class="searchtitle__header">Заинтересовались?</h3>
         <p class="searchtitle__info">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a href="#">Поиск гостиницы в Седоне</a>
+        <a href="form.html">Поиск гостиницы в Седоне</a>
       </section>
       <!-- SEARCH HEADER END -->
 
@@ -173,10 +170,12 @@
             <div class="search__form__item">
               <label for="datein">Дата заезда:</label>
               <input type="text" id="datein" name="datein" value="24 апреля 2016" required>
+              <a href="#"></a>
             </div>
             <div class="search__form__item">
               <label for="dateout">Дата выезда:</label>
               <input type="text" id="dateout" name="dateout" value="4 июля 2016" required>
+              <a href="#"></a>
             </div>
             <div class="search__form__item">
               <label for="adult">Взрослые:</label>
@@ -236,29 +235,7 @@
     <!-- FOOTER END -->
 
   </div>
-  <script>
-    var link = document.querySelector(".searchtitle a");
-
-    var form = document.querySelector(".search__form");
-
-    link.addEventListener("click", function(event) {
-      event.preventDefault();
-      form.classList.add("search__form--show");
-    });
-
-    link.addEventListener("click", function(event) {
-      event.preventDefault();
-      form.classList.add("search__form--show");
-    });
-
-    window.addEventListener("keydown", function(event) {
-        if (event.keyCode === 27) {
-          if (form.classList.contains("search__form--show")) {
-            form.classList.remove("search__form--show");
-          }
-        }
-      });
-  </script>
+  <script src="js/form.js"></script>
 </body>
 
 </html>
