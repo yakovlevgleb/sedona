@@ -217,11 +217,12 @@ header {
   font-size: 14px;
   font-weight: 400;
   line-height: 26px;
-  vertical-align: middle;
+  vertical-align: top;
   position: relative;
   padding-left: 102px;
   padding-top: 22px;
   box-sizing: border-box;
+  padding-top: 41px;
 }
 
 .footer__copyright span {
@@ -331,8 +332,8 @@ header {
   font-size: 21px;
   color: #ffffff;
   line-height: 26px;
-  padding-right: 125px;
-  padding-left: 124px;
+  padding-right: 124px;
+  padding-left: 125px;
   margin-bottom: 14px;
 }
 
@@ -661,13 +662,14 @@ header {
   margin-left: -284px;
   background-color: #ffffff;
   width: 568px;
-  padding: 55px;
+  padding: 54px;
   box-sizing: border-box;
   display: none;
 }
 
 .search__form--show {
-  display: block;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .search__form input {
@@ -679,20 +681,20 @@ header {
   font-weight: 700;
   font-family: "PT Sans", sans-serif;
   text-transform: uppercase;
-  border: none;
+  border: 2px #f2f2f2 solid;
   background: #f2f2f2;
   width: 346px;
   height: 38px;
   padding-left: 15px;
   box-sizing: border-box;
   animation: right 0.7s;
-  animation: minimise 0.7s;
 }
 
 .search__form input:hover,
 .search__form__btn--plus:hover,
 .search__form__btn--minus:hover {
   background-color: #ebebeb;
+  border: 2px #ebebeb solid;
 }
 
 .search__form input:active,
@@ -731,20 +733,21 @@ header {
 }
 
 .search__form__item:nth-child(1) label {
-  margin-right: 23px;
+  margin-right: 21px;
+  margin-left: 2px;
 }
 
 .search__form__item:nth-child(2) label {
-  margin-right: 19px;
+  margin-right: 18px;
 }
 
 .search__form__item:nth-child(3) label {
-  margin-right: 40px;
+  margin-right: 41px;
 }
 
 .search__form__item:nth-child(4) label {
   margin-right: 27px;
-  margin-left: 52px;
+  margin-left: 54px;
 }
 
 .form__item--narrow {
@@ -766,7 +769,6 @@ header {
   vertical-align: middle;
   color: #000000;
   animation: left 0.7s;
-
 }
 
 .form__item--narrow input {
@@ -987,7 +989,7 @@ input[type="checkbox"]:checked:disabled+label::after {
 }
 
 .filter__heading--range {
-  margin-bottom: 7px;
+  margin-bottom: 9px;
 }
 
 .filter__price__controls {
@@ -1037,6 +1039,7 @@ input[type="checkbox"]:checked:disabled+label::after {
   font: inherit;
   background: none;
   border: none;
+  line-height:1;
 }
 
 .filter__range__controls {
