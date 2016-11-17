@@ -148,6 +148,7 @@ header {
   padding-top: 36px;
   padding-bottom: 17px;
   padding-left: 124px;
+  box-sizing: border-box;
 }
 
 .footer__btn {
