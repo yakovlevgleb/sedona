@@ -148,9 +148,6 @@ header {
   padding-top: 36px;
   padding-bottom: 17px;
   padding-left: 124px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
 }
 
 .footer__btn {
@@ -221,8 +218,6 @@ header {
   position: relative;
   padding-left: 102px;
   padding-top: 22px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding-top: 41px;
 }
@@ -665,8 +660,6 @@ header {
   background-color: #ffffff;
   width: 568px;
   padding: 54px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   display: none;
 }
@@ -690,9 +683,8 @@ header {
   width: 346px;
   height: 38px;
   padding-left: 15px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-animation: right 0.7s;
   animation: right 0.7s;
 }
 
@@ -727,6 +719,7 @@ header {
   background-position: -10px -190px;
   background-image: url("../img/icons/sprite.png");
   background-repeat: no-repeat;
+  -webkit-animation: right 0.7s;
   animation: right 0.7s;
 }
 
@@ -760,6 +753,7 @@ header {
   display: inline-block;
   vertical-align: middle;
   position: relative;
+  -webkit-animation: right 0.7s;
   animation: right 0.7s;
 }
 
@@ -774,6 +768,7 @@ header {
   display: inline-block;
   vertical-align: middle;
   color: #000000;
+  -webkit-animation: right 0.7s;
   animation: left 0.7s;
 }
 
@@ -854,6 +849,7 @@ header {
   margin-top: 27px;
   font-weight: bold;
   background-color: #81B3D2;
+  -webkit-animation: right 0.7s;
   animation: bottom 0.7s;
 }
 
@@ -895,8 +891,6 @@ header {
 .filter__range {
   display: inline-block;
   vertical-align: top;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   font-weight: 400;
   font-size: 16px;
