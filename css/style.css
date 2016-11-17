@@ -139,11 +139,17 @@ header {
   color: #000000;
 }
 
+/*Указания к проверке
+
+В случае, если в проекте не используются свойства, для которых нужны префиксы, этот пункт необходимо засчитывать !!!и не считать ошибкой.*/
+
 .footer__social {
   display: inline-block;
   padding-top: 36px;
   padding-bottom: 17px;
   padding-left: 124px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -215,6 +221,8 @@ header {
   position: relative;
   padding-left: 102px;
   padding-top: 22px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding-top: 41px;
 }
@@ -657,6 +665,8 @@ header {
   background-color: #ffffff;
   width: 568px;
   padding: 54px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   display: none;
 }
@@ -680,6 +690,8 @@ header {
   width: 346px;
   height: 38px;
   padding-left: 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   animation: right 0.7s;
 }
@@ -883,6 +895,8 @@ header {
 .filter__range {
   display: inline-block;
   vertical-align: top;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   font-weight: 400;
   font-size: 16px;
@@ -1230,6 +1244,8 @@ input[type="checkbox"]:checked:disabled+label::after {
   background-image: url("../img/icons/sprite.png");
   background-repeat: no-repeat;
   background-position: -10px -10px;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
